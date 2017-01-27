@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+namespace AlprNetGuiTest
 {
     partial class Form1
     {
@@ -28,118 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ButtonCAMARA = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
+            this.btnDetect = new System.Windows.Forms.Button();
+            this.picLicensePlate = new System.Windows.Forms.PictureBox();
+            this.picOriginal = new System.Windows.Forms.PictureBox();
+            this.lbxPlates = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rbUSA = new System.Windows.Forms.RadioButton();
+            this.rbEU = new System.Windows.Forms.RadioButton();
+            ((System.ComponentModel.ISupportInitialize)(this.picLicensePlate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picOriginal)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // btnDetect
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 66);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 21);
-            this.comboBox1.TabIndex = 1;
+            this.btnDetect.Location = new System.Drawing.Point(830, 25);
+            this.btnDetect.Name = "btnDetect";
+            this.btnDetect.Size = new System.Drawing.Size(291, 37);
+            this.btnDetect.TabIndex = 0;
+            this.btnDetect.Text = "Detect License Plate";
+            this.btnDetect.UseVisualStyleBackColor = true;
+            this.btnDetect.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // picLicensePlate
             // 
-            this.button1.Location = new System.Drawing.Point(224, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Iniciar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.picLicensePlate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picLicensePlate.Location = new System.Drawing.Point(827, 403);
+            this.picLicensePlate.Name = "picLicensePlate";
+            this.picLicensePlate.Size = new System.Drawing.Size(294, 123);
+            this.picLicensePlate.TabIndex = 1;
+            this.picLicensePlate.TabStop = false;
             // 
-            // videoSourcePlayer1
+            // picOriginal
             // 
-            this.videoSourcePlayer1.Location = new System.Drawing.Point(23, 93);
-            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(333, 240);
-            this.videoSourcePlayer1.TabIndex = 3;
-            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
-            this.videoSourcePlayer1.VideoSource = null;
+            this.picOriginal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picOriginal.Location = new System.Drawing.Point(12, 25);
+            this.picOriginal.Name = "picOriginal";
+            this.picOriginal.Size = new System.Drawing.Size(809, 501);
+            this.picOriginal.TabIndex = 2;
+            this.picOriginal.TabStop = false;
             // 
-            // button2
+            // lbxPlates
             // 
-            this.button2.Location = new System.Drawing.Point(293, 63);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Detener";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.lbxPlates.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxPlates.FormattingEnabled = true;
+            this.lbxPlates.Location = new System.Drawing.Point(827, 81);
+            this.lbxPlates.Name = "lbxPlates";
+            this.lbxPlates.Size = new System.Drawing.Size(294, 303);
+            this.lbxPlates.TabIndex = 3;
             // 
-            // button3
+            // label1
             // 
-            this.button3.Location = new System.Drawing.Point(261, 23);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Foto";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Source Image:";
             // 
-            // PictureBox2
+            // label2
             // 
-            this.PictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.PictureBox2.Location = new System.Drawing.Point(390, 93);
-            this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(378, 240);
-            this.PictureBox2.TabIndex = 6;
-            this.PictureBox2.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(827, 387);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "License Plate ROI:";
             // 
-            // Timer1
+            // label3
             // 
-            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick_1);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(827, 65);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(124, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Matched License Plates:";
             // 
-            // ButtonCAMARA
+            // openFileDialog
             // 
-            this.ButtonCAMARA.Location = new System.Drawing.Point(528, 44);
-            this.ButtonCAMARA.Name = "ButtonCAMARA";
-            this.ButtonCAMARA.Size = new System.Drawing.Size(170, 23);
-            this.ButtonCAMARA.TabIndex = 7;
-            this.ButtonCAMARA.Text = "Procesar";
-            this.ButtonCAMARA.UseVisualStyleBackColor = true;
-            this.ButtonCAMARA.Click += new System.EventHandler(this.ButtonCAMARA_Click_1);
+            this.openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif;" +
+    " *.png|All files (*.*)|*.*";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(827, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Region:";
+            // 
+            // rbUSA
+            // 
+            this.rbUSA.AutoSize = true;
+            this.rbUSA.Checked = true;
+            this.rbUSA.Location = new System.Drawing.Point(878, 7);
+            this.rbUSA.Name = "rbUSA";
+            this.rbUSA.Size = new System.Drawing.Size(40, 17);
+            this.rbUSA.TabIndex = 8;
+            this.rbUSA.TabStop = true;
+            this.rbUSA.Text = "US";
+            this.rbUSA.UseVisualStyleBackColor = true;
+            // 
+            // rbEU
+            // 
+            this.rbEU.AutoSize = true;
+            this.rbEU.Location = new System.Drawing.Point(924, 7);
+            this.rbEU.Name = "rbEU";
+            this.rbEU.Size = new System.Drawing.Size(40, 17);
+            this.rbEU.TabIndex = 9;
+            this.rbEU.Text = "EU";
+            this.rbEU.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 345);
-            this.Controls.Add(this.ButtonCAMARA);
-            this.Controls.Add(this.PictureBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.videoSourcePlayer1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1128, 538);
+            this.Controls.Add(this.rbEU);
+            this.Controls.Add(this.rbUSA);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbxPlates);
+            this.Controls.Add(this.picOriginal);
+            this.Controls.Add(this.picLicensePlate);
+            this.Controls.Add(this.btnDetect);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "OpenALPR-Net Demo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLicensePlate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picOriginal)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox PictureBox2;
-        private System.Windows.Forms.Timer Timer1;
-        private System.Windows.Forms.Button ButtonCAMARA;
+        private System.Windows.Forms.Button btnDetect;
+        private System.Windows.Forms.PictureBox picLicensePlate;
+        private System.Windows.Forms.PictureBox picOriginal;
+        private System.Windows.Forms.ListBox lbxPlates;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton rbUSA;
+        private System.Windows.Forms.RadioButton rbEU;
     }
 }
-

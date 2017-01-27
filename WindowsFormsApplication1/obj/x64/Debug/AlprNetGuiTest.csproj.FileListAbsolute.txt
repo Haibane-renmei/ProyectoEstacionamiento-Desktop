@@ -1,0 +1,29 @@
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\bin\x64\Debug\AlprNetGuiTest.exe.config
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.csprojResolveAssemblyReference.cache
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.Form1.resources
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.Properties.Resources.resources
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.csproj.GenerateResource.Cache
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\bin\x64\Debug\AlprNetGuiTest.exe
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\bin\x64\Debug\AlprNetGuiTest.pdb
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.exe
+C:\Users\Francisco Clotet\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.pdb
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AlprNetGuiTest.exe.config
+C:\Users\carlo\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.exe
+C:\Users\carlo\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.pdb
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AlprNetGuiTest.exe
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AlprNetGuiTest.pdb
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\openalpr-net.dll
+C:\Users\carlo\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.csprojResolveAssemblyReference.cache
+C:\Users\carlo\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.Form1.resources
+C:\Users\carlo\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.Properties.Resources.resources
+C:\Users\carlo\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.csproj.GenerateResource.Cache
+C:\Users\carlo\Desktop\proyectoDesarrollo\obj\x64\Debug\AlprNetGuiTest.Form2.resources
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AForge.xml
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AForge.Controls.xml
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AForge.Imaging.xml
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AForge.Math.xml
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AForge.Video.xml
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AForge.Video.DirectShow.xml
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\AForge.Vision.xml
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\MySql.Data.dll
+C:\Users\carlo\Desktop\proyectoDesarrollo\bin\x64\Debug\MySql.Data.xml
